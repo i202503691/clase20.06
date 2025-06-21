@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p.zoom{
+            font-size: 14px;
+            color: blue;
+            text-align: justify;
+            width: 250px;
+            height: auto;
+            /*Firefox*/
+            -moz-transition: font-size 300ms linear 0s;
+            /*Chrome/Safari*/
+            -webkit-transition: font-size300ms linear 0s;
+            /*Default*/
+            transition: font-size 300ms linear 0s;
+        }
+
+        p.zoom:hover{
+            font-size: 20px;
+            color:red;
+            text-align: center;
+        }
+
+        img.growth{
+            width: 150px;
+            height: 130px;
+            border: 1px solid;
+            /*Firefox*/
+            -moz-transition-property: all;
+            -moz-transition-duration: 2s;
+            -moz-transition-timing-function: ease;
+            -moz-transition-delay: 0.5s;
+            /*Chrome/Safari*/
+            -webkit-transition-property: all;
+            -webkit-transition-duration: 2s;
+            -webkit-transition-timing-function: ease;
+            -webkit-transition-delay: 0.5s;
+            /*Defaulta*/
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease;
+            transition-delay: 0.5s;
+
+        }
+
+        img.growth:hover{
+            width:250px;
+            height:230px;
+            border:2px solid;
+        }
+
+    </style>
+</head>
+<body>
+    <p class="zoom">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque error blanditiis, magnam voluptatum corrupti ipsa deserunt repudiandae dolor autem iusto suscipit ut necessitatibus reprehenderit saepe quidem nisi facilis quis a?
+    </p>
+
+    <h3>Imagenes</h3>
+
+    <img class="growth" src="assets/img/dmc.jpg">
+    <img class="growth" src="assets/img/dmc.jpg">
+    <img class="growth" src="assets/img/dmc.jpg">
+</body>
+</html>
